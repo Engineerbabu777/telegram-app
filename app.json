@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "code",
+    "name": "Telegram Clone",
     "slug": "code",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -9,33 +9,73 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+      "supportsTablet": true,
+      "infoPlist": {
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": [
+              "apps.googleusercontent.com.297076381241-l24al98kehsv1kqgbe5ms9953l0jjl2o"
+            ]
+          }
+        ]
+      },
+      "android": {
+        "googleServicesFile": "./google-services.json",
+        "adaptiveIcon": {
+          "foregroundImage": "./assets/images/adaptive-icon.png",
+          "backgroundColor": "#1E2732"
+        },
+        "package": "com.awaismumtaz0099.code",
+        "permission": [
+          "android.permission.RECORD_AUDIO"
+        ]
+      },
+      "web": {
+        "bundler": "metro",
+        "output": "static",
+        "favicon": "./assets/images/favicon.png"
+      },
+      "plugins": [
+        "expo-router",
+        [
+          "@react-native-google-signin/google-signin",
+          {
+            "iosUrlScheme": "apps.googleusercontent.com.297076381241-l24al98kehsv1kqgbe5ms9953l0jjl2o"
+          }
+        ],
+        [
+          "expo-image-picker",
+          {
+            "photosPermission": "Allow ${PRODUCT_NAME} to access your photos",
+            "cameraPermission": "Allow ${PRODUCT_NAME} to open your camera",
+            "microphonePermission": "Allow ${PRODUCT_NAME} to access your microphone"
+          }
+        ],
+        [
+          "expo-splash-screen",
+          {
+            "image": "./assets/images/splash.png",
+            "imageWidth": 200,
+            "resizeMode": "contain",
+            "backgroundColor": "#ffffff"
+          }
+        ]
+      ],
+      "experiments": {
+        "typedRoutes": true,
+        "tsconfigPaths": true
+      },
+      "extra": {
+        "router": {
+          "origin": false
+        },
+        "eas": {
+          "projectId": "1c610524-8740-4687-b2d7-3d45fbed5fc3"
+        }
       }
     },
-    "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
-    },
-    "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
-        }
-      ]
-    ],
-    "experiments": {
-      "typedRoutes": true
+    "android": {
+      "package": "com.awaismumtaz0099.code"
     }
   }
 }

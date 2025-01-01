@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "297076381241",
+    "project_id": "telegram-app-7cc61",
+    "storage_bucket": "telegram-app-7cc61.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297076381241:android:4a2f792efdc5aefa701fe8",
+        "android_client_info": {
+          "package_name": "com.awaismumtaz0099.code"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "297076381241-aa31202vtotbdpnne73g4cvulo9fbaep.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.awaismumtaz0099.code",
+            "certificate_hash": "6cc0068052532cfc43807e3f7cb16f12a9661f06"
+          }
+        },
+        {
+          "client_id": "297076381241-8pr0fjklmoensbddt8mgok1bvrnfjucl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLxHJB-Fn6CYp5AWNmK36IsM3np4FveFs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "297076381241-8pr0fjklmoensbddt8mgok1bvrnfjucl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "297076381241-l24al98kehsv1kqgbe5ms9953l0jjl2o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.awaismumtaz0099.code"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
